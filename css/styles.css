@@ -28,6 +28,20 @@ a {
     text-align: center;
 }
 
+a::selection {
+    background: none;
+    color: purple;
+}
+
+a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-text-stroke: 1px black; /* For Safari/Chrome */
+    text-stroke: 1px black; /* For Firefox and future versions of browsers */
+}
 a:hover {
     font-weight: bold;
 }
