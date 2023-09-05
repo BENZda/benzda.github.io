@@ -22,7 +22,7 @@ a {
     font-family: "Courier New", Courier, Monaco;
     font-style: normal;
     font-weight: 500;
-    font-size: 4px;
+    font-size: 8px;
     z-index: 10;
     color: #FFF;
     text-align: center;
@@ -39,7 +39,7 @@ a:hover {
 }
 
 b {
-    font-size: 4px;
+    font-size: 8px;
     color: #FFF;
     text-align: center;
     margin: 1px;
