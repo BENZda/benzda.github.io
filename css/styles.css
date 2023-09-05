@@ -38,35 +38,53 @@ a::after {
     /*-webkit-text-stroke: 1px black; For Safari/Chrome
     text-stroke: 1px black; For Firefox and future versions of browsers */
 }
-a:hover {
+/*a:hover {
     font-weight: bold;
-}
-
-.contributors {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 12px;
-    color: #FFF;
-}
-
-.contributors a:hover {
-    font-weight: bold;
-}
+}*/
 
 .icon-container {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end; /* Align icons to the right */
     align-items: center;
+    flex-direction: row-reverse; /* Reverse the order of icons */
+    margin: 1;
 }
 
 b {
     font-size: 16px;
     color: #FFF;
     text-align: center;
-    margin: 1px;
+}
+
+/* Add padding to icons in the middle */
+.icon-container b:not(:first-child):not(:last-child) {
+    margin: 0 5px; /* Adjust the padding as needed */
+}
+
+/* Remove margin from the first icon on the left */
+.icon-container b:first-child {
+    margin-left: 0;
+}
+
+/* Remove margin from the last icon on the right */
+.icon-container b:last-child {
+    margin-right: 0;
 }
 
 b:hover {
     filter: drop-shadow(0px 0px 2px white);
 }
+
+.clickable:hover {
+    font-weight: bold;
+}
+
+.contributors {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
