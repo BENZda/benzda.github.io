@@ -61,7 +61,7 @@ b {
 
 /* Add padding to icons in the middle */
 .icon-container b:not(:first-child):not(:last-child) {
-    margin: 0 5px; /* Adjust the padding as needed */
+    margin: 0 10px; /* Adjust the padding as needed */
 }
 
 /* Remove margin from the first icon on the left */
