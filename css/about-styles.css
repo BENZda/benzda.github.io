@@ -23,6 +23,24 @@ body {
     margin-bottom: 10px; /* Add space below "eclaire" */
 }
 
+a {
+    text-decoration: none;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    color: inherit; /* Inherit the color from the parent (body) */
+}
+
+a::selection {
+    background: none;
+    color: purple;
+}
+
+a::after {
+    content: attr(data-text);
+    z-index: -1;
+    /*-webkit-text-stroke: 1px black; For Safari/Chrome
+    text-stroke: 1px black; For Firefox and future versions of browsers */
+}
+
 .icon-container-about {
     display: flex;
     justify-content: space-between; /* Distribute icons with space between them */
