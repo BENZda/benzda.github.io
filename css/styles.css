@@ -21,6 +21,10 @@ body {
     text-align: center;
 }
 
+.container-about {
+    text-align: center;
+}
+
 a {
     text-decoration: none;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -47,6 +51,16 @@ a::after {
     justify-content: flex-end; /* Align icons to the right */
     align-items: center;
 }
+
+.icon-container-about {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center;
+}
+
 
 b {
     font-size: 16px;

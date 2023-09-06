@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh;
+    margin: 0;
+    font-family: "Courier New", Courier, Monaco;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFF;
+    text-align: center;
+}
+
+.container-about {
+    text-align: center;
+    margin: 0 2px; /* Add 2px left and right margin */
+}
+
+#eclaire {
+    font-size: 16px; /* Increase the font size of "eclaire" */
+    margin-bottom: 10px; /* Add space below "eclaire" */
+}
+
+.icon-container-about {
+    display: flex;
+    justify-content: space-between; /* Distribute icons with space between them */
+    align-items: center;
+    margin: 0 2px; /* Add 2px left and right margin */
+}
+
+b {
+    font-size: 10px;
+    color: #FFF;
+}
+
+/* Add padding to icons in the middle */
+.icon-container-about b:not(:first-child):not(:last-child) {
+    margin: 0 10px; /* Adjust the padding as needed */
+}
