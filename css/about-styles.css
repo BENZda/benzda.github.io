@@ -53,6 +53,19 @@ b {
     color: #FFF;
 }
 
+/* b:hover {
+    filter: drop-shadow(0px 0px 2px white);
+} */
+
+#icon {
+    font-size: 10px;
+    color: #FFF;
+}
+
+#icon:hover {
+    filter: drop-shadow(0px 0px 2px white);
+}
+
 /* Add padding to icons in the middle */
 .icon-container-about b:not(:first-child):not(:last-child) {
     margin: 0 10px; /* Adjust the padding as needed */
